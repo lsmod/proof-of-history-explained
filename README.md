@@ -63,7 +63,7 @@ You get the picture. Now it got a list of proof looking like that:
 ]
 ```
 
-For demonstration purposes, let say it take 1sec to create a sha256 hash.
+For demonstration purposes, let's say it takes 1sec to create a sha256 hash.
 It would take me 3 sec to create this "proof".
 If I give it to you. You could verify quicker that it took me to produce it.
 
@@ -114,16 +114,16 @@ for i in 0..10 {
 Full demo code available at:\
 https://github.com/lsmod/proof-of-history-explained
 
-So you see, you could verify in less second it takes to produce the proof.
+So you see, you could verify in fewer second it takes to produce the proof.
 But the idea is not to know how many seconds passed, just that time passed.
 
 ### Ok, I get proof of history! What's the point?
 
-Let get back a bit and look at bitcoin consensus.\
+Let's get back a bit and look at bitcoin consensus.\
 Minning block is like brute-forcing to find the right nonce it takes to make the block valid. All miners try and try... And eventually one finds the correct nonce.
 
 This process is random. We don't know which miner/node will produce the next block.\
-Hell! Two nodes could produce two valid blocks at the same time!
+Hell! Two nodes could even produce two valid blocks at the same time!
 
 When a miner produces a block it has to propagate this block to other nodes and they eventually come to an agreement (by starting mining on this new block).\
 That's for proof of Work.
@@ -163,9 +163,9 @@ When a node produces a block, transactions & blocks are anchored in proof of his
 
 - **Block producing scheduling:**\
   Nodes can easily agree on whom turns to produce a block it is.
-  This way: only one node transmit the block it produced at the time!\
-  It allow blocks propagation optimisation kind of like bitorrent (more about this at following link: https://medium.com/solana-labs/turbine-solanas-block-propagation-protocol-solves-the-scalability-trilemma-2ddba46a51db). \
-  It also Makes it easier to punish a node that didn't do its job in time.
+  This way, only one node transmit the block it has produced at the time!\
+  It allow blocks propagation optimisation kind of looking like bitorrent (more about this at following link: https://medium.com/solana-labs/turbine-solanas-block-propagation-protocol-solves-the-scalability-trilemma-2ddba46a51db). \
+  Finally, It also Makes it easier to punish a node that didn't do its job in time.
 
 ## Conclusion:
 
@@ -175,9 +175,7 @@ Proof of history is not the only reason but the main one.
 You can read about other innovation of the project here:\
 https://medium.com/solana-labs/7-innovations-that-make-solana-the-first-web-scale-blockchain-ddc50b1defda
 
-This article aims to vulgarize Solana concept therefore stuff has been simplified.
-More details in the tech at:\
-https://solana.com/
+This article aims to vulgarize Solana concept therefore stuff has been simplified. I'm by no mean a blockchain consensus mechanisms expert.
 
 To finish: One video that helpt me understand the most:\
 https://www.youtube.com/watch?v=rKGhbC6Uync
